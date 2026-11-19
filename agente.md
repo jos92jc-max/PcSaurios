@@ -47,9 +47,7 @@ Además, podrán desarrollarse funciones Front-End relacionadas con la propuesta
 
 El sitio deberá considerar durante todo el desarrollo el diseño responsivo, la usabilidad, la accesibilidad básica y una navegación clara.
 
-**Fuera del alcance de esta actividad:** no se deberá implementar un Back-End real, base de datos MySQL, sistema completo de autenticación, panel administrativo ni procesamiento real de pedidos mediante servidor, salvo que posteriormente estos elementos sean solicitados expresamente.
-
-Las funcionalidades de Back-End contempladas en la propuesta original podrán documentarse como **funciones propuestas o futuras**, pero no deberán presentarse como implementadas si no funcionan realmente.
+**Alcance vigente:** además de la portada estática, se implementó un panel Laravel con autenticación propia, roles `Administrador`, `Editor` y `Cliente`, CRUD de productos, categorías y pedidos, y edición de datos generales. Las secciones antiguas que describen el proyecto como “solo front-end” quedaron obsoletas.
 
 ## 5. Entradas
 
@@ -113,7 +111,7 @@ proyecto/
 ```
 
 14. No agregar librerías, frameworks o dependencias adicionales sin una necesidad justificada.
-15. No implementar funcionalidades de Back-End, PHP o MySQL como si formaran parte de esta entrega Front-End.
+15. El panel Laravel y MySQL forman parte del alcance vigente; no presentes como operativas funciones que no estén implementadas y verificadas.
 16. Antes de considerar terminada una funcionalidad, comprobar su funcionamiento y verificar que no afecte negativamente al resto del sitio.
 17. El diseño y las funcionalidades deberán responder a las necesidades de **PcSaurios** y no utilizar contenido genérico únicamente para completar la página.
 

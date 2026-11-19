@@ -29,7 +29,7 @@ Anteriormente, la información comercial se distribuía a través de publicacion
 
 * **Front-End:** HTML5 semántico, CSS3 personalizado, Bootstrap 5.3 y JavaScript nativo (Vanilla JS).
 * **Diseño:** Responsivo (móviles, tabletas y computadoras), accesible y optimizado para tiempos de carga eficientes.
-* **Fuera del alcance actual:** Back-End real, bases de datos MySQL, autenticación de usuarios, panel administrativo y procesamiento directo de pagos/pedidos (documentados como evolución futura).
+* **Implementado en entregas posteriores:** Back-End MySQL, autenticación de usuarios, roles y panel administrativo; siguen fuera de alcance las pasarelas automáticas de pago, el cálculo automático de envíos y el seguimiento de guías.
 
 ---
 

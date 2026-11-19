@@ -1,4 +1,4 @@
-# PcSaurios — Plataforma Web Comercial (Front-End)
+# PcSaurios — Plataforma Web Comercial
 
 Bienvenido al repositorio del proyecto web de **PcSaurios**, una plataforma orientada a centralizar y exhibir el catálogo de photocards, sleeves, polaroids, postales, figuras coleccionables y artículos personalizados.
 
@@ -9,7 +9,7 @@ Bienvenido al repositorio del proyecto web de **PcSaurios**, una plataforma orie
 **PcSaurios** es un emprendimiento enfocado en la comunidad de coleccionistas y fans (principalmente de K-pop y artículos afines). Este sitio web comercial surge para resolver la dispersión de información que comúnmente ocurre en redes sociales y mensajería directa, proporcionando a los visitantes un espacio ordenado, accesible y transparente para explorar productos disponibles, verificar especificaciones y conocer los procedimientos de envíos internacionales y solicitudes.
 
 > [!NOTE]
-> **Alcance de esta entrega:** La implementación actual corresponde al **Front-End**. Las funciones avanzadas de servidor como bases de datos relacionales (MySQL), autenticación de usuarios, panel administrativo interno y pasarelas automáticas de pago corresponden a una posible evolución futura.
+> **Alcance de esta entrega:** La portada pública es el sitio estático de `index.html`. El panel administrativo Laravel incluye autenticación propia, roles, CRUD de productos/categorías/pedidos y edición de datos generales. Las pasarelas automáticas de pago siguen siendo evolución futura.
 
 ---
 
@@ -119,4 +119,20 @@ Para visualizar y probar la página web en cualquier equipo:
 2. Abre el archivo `index.html` en cualquier navegador web moderno (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari o Brave) haciendo doble clic sobre él.
 3. También puedes utilizar un servidor local de desarrollo si lo prefieres (por ejemplo, la extensión **Live Server** de Visual Studio Code o ejecutando `python -m http.server 8000` en la terminal).
 4. Para probar la visualización en dispositivos móviles o tabletas, puedes redimensionar la ventana del navegador o presionar `F12` para abrir las Herramientas de Desarrollador e ingresar al modo de emulación de dispositivos responsivos.
+
+---
+
+## 7. Panel administrativo Laravel
+
+El panel usa autenticación propia, roles y MySQL/XAMPP (`DB_DATABASE=pcsaurios`).
+
+```bash
+php artisan migrate
+php artisan db:seed
+php artisan serve
+```
+
+Usuarios de prueba del seeder: `admin@pcsaurios.test`, `editor@pcsaurios.test` y `cliente@pcsaurios.test`. La contraseña se toma de `SEED_PASSWORD` (en local, `password` si la variable no existe). Cambia ese valor en `.env` antes de sembrar en un entorno compartido.
+
+Verificación: `vendor/bin/pint` y `php artisan test`.
 
