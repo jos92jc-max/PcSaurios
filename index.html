@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PcSaurios — Catálogo comercial de photocards, polaroids, sleeves, postales, figuras y artículos personalizados para coleccionistas.">
+  <title>PcSaurios — Photocards y Coleccionables</title>
+
+  <!-- Tipografía Inter de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Estilos personalizados PcSaurios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Encabezado y Barra de Navegación Principal (Navbar)
+       ========================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-pcsaurios sticky-top" aria-label="Navegación principal de PcSaurios">
+      <div class="container">
+        <!-- Logotipo e Identidad Oficial de PcSaurios -->
+        <a class="navbar-brand navbar-brand-pcsaurios" href="#inicio">
+          <img src="img/identidad/logo-pcsaurios.webp" alt="Logotipo oficial de PcSaurios" class="navbar-brand-logo">
+          <span>PcSaurios</span>
+          <span class="brand-badge" aria-label="Giro comercial">Tienda</span>
+        </a>
+
+        <!-- Botón Menú Hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPcSaurios" aria-controls="navbarPcSaurios" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces de Navegación previstos en la Arquitectura -->
+        <div class="collapse navbar-collapse" id="navbarPcSaurios">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-link-pcsaurios active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-pcsaurios" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-pcsaurios" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-pcsaurios" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-pcsaurios" href="#promociones">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-pcsaurios" href="#ems-aduana">EMS / Aduana</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-pcsaurios" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+       Contenido Principal
+       ========================================================================== -->
+  <main>
+
+    <!-- 1. Sección Inicio / Hero -->
+    <section id="inicio" class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- Columna Informativa y Acciones -->
+          <div class="col-lg-7">
+            <div class="hero-content">
+              <div class="hero-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                <span>Coleccionables y Productos Personalizados</span>
+              </div>
+              <h1 id="hero-title" class="hero-title">
+                Colecciona, protege y personaliza tu pasión
+              </h1>
+              <p class="hero-text">
+                En <strong>PcSaurios</strong> centralizamos nuestro catálogo de photocards, sleeves, postales, fotografías y artículos personalizados para que puedas conocer nuestros productos y encontrar su información de forma clara y organizada.
+              </p>
+              <div class="hero-actions">
+                <a href="#productos" class="btn-pcsaurios-primary">
+                  Ver productos
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </a>
+                <a href="#nosotros" class="btn-pcsaurios-outline">
+                  Conocer más
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Visual con Fotografía Real Destacada -->
+          <div class="col-lg-5">
+            <div class="hero-visual-card">
+              <img src="img/galeria/galeria-01.webp" alt="Colección de photocards y artículos protegidos en PcSaurios" class="hero-featured-image">
+              <div class="hero-visual-footer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                </svg>
+                <span>Protección, estética y cuidado para tu colección</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Sección Nosotros -->
+    <section id="nosotros" class="section-padding-alt" aria-labelledby="nosotros-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-tag">Sobre Nosotros</span>
+          <h2 id="nosotros-title" class="section-title">El rincón de los coleccionistas</h2>
+          <p class="section-subtitle">
+            Dedicados a acercar artículos auténticos, protección de calidad y una experiencia transparente para cada fan y coleccionista.
+          </p>
+        </div>
+
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-7">
+            <div class="pe-lg-4">
+              <h3 class="h4 mb-3" style="color: var(--pcs-primary); font-weight: 700;">
+                ¿Qué es PcSaurios?
+              </h3>
+              <p class="text-secondary mb-3">
+                <strong>PcSaurios</strong> es un proyecto independiente enfocado en la distribución y comercialización de artículos de colección: <em>photocards, polaroids, sleeves, postales, fotografías, álbumes, figuras</em> y mercancía personalizada pensada para proteger y disfrutar al máximo tus colecciones favoritas.
+              </p>
+              <p class="text-secondary mb-4">
+                Entendemos lo valiosa que es cada pieza. Por ello, centralizamos en este espacio la información de nuestros artículos para que explores con tranquilidad precios, especificaciones y las condiciones de nuestros envíos internacionales.
+              </p>
+
+              <div class="row g-3">
+                <div class="col-sm-4">
+                  <div class="about-card text-center">
+                    <div class="about-card-icon mx-auto">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <rect width="18" height="18" x="3" y="3" rx="2"/>
+                        <path d="M7 7h10M7 12h10M7 17h6"/>
+                      </svg>
+                    </div>
+                    <h4 class="h6 fw-bold mb-1">Catálogo Variado</h4>
+                    <p class="small text-muted mb-0">Photocards, figuras y accesorios seleccionados.</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="about-card text-center">
+                    <div class="about-card-icon mx-auto">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                      </svg>
+                    </div>
+                    <h4 class="h6 fw-bold mb-1">Cuidado Seguro</h4>
+                    <p class="small text-muted mb-0">Empaques pensados para proteger cada envío.</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="about-card text-center">
+                    <div class="about-card-icon mx-auto">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="m9 12 2 2 4-4"/>
+                      </svg>
+                    </div>
+                    <h4 class="h6 fw-bold mb-1">Claridad Total</h4>
+                    <p class="small text-muted mb-0">Información precisa y sin costos ocultos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="about-image-wrapper">
+              <img src="img/galeria/galeria-02.webp" alt="Fotografía real de empaquetado y cuidado de productos en PcSaurios" class="about-image">
+              <div class="about-image-badge text-center">
+                <strong>PcSaurios</strong> — Pasión, dedicación y cuidado en cada entrega.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Sección Productos (Catálogo interactivo) -->
+    <section id="productos" class="section-padding" aria-labelledby="productos-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-tag">Catálogo</span>
+          <h2 id="productos-title" class="section-title">Nuestros Productos</h2>
+          <p class="section-subtitle">
+            Explora los artículos disponibles en nuestro inventario inicial. Utiliza el buscador o filtra por tipo de producto.
+          </p>
+        </div>
+
+        <!-- Barra de herramientas: Buscador y Filtros -->
+        <div class="catalog-toolbar">
+          <div class="row g-3 align-items-center">
+            <!-- Buscador -->
+            <div class="col-lg-5">
+              <div class="search-input-wrapper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"/>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search" id="productSearchInput" class="form-control form-control-pcsaurios" placeholder="Buscar por nombre, categoría o integrante..." aria-label="Buscar producto por nombre, categoría o integrante">
+              </div>
+            </div>
+
+            <!-- Botones de Filtro por Categoría -->
+            <div class="col-lg-7">
+              <div class="filter-pills-container justify-content-lg-end" role="group" aria-label="Filtrar por categoría">
+                <button type="button" class="btn-filter-pill active" data-category="all">Todos</button>
+                <button type="button" class="btn-filter-pill" data-category="photocard">Photocards</button>
+                <button type="button" class="btn-filter-pill" data-category="polaroid">Polaroids</button>
+                <button type="button" class="btn-filter-pill" data-category="figura">Figuras</button>
+                <button type="button" class="btn-filter-pill" data-category="album">Álbumes</button>
+                <button type="button" class="btn-filter-pill" data-category="otros">Otros</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de estado y contador de resultados -->
+        <div class="catalog-status-bar">
+          <span id="catalogCountText" aria-live="polite">Mostrando 14 productos</span>
+          <button type="button" id="resetFiltersBtn" class="btn btn-sm btn-link text-decoration-none" style="color: var(--pcs-primary); display: none;">
+            Restablecer búsqueda y filtros
+          </button>
+        </div>
+
+        <!-- Grid de Tarjetas de Productos -->
+        <div id="productsGrid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+          <!-- Producto 1 -->
+          <div class="col product-item" data-category="photocard" data-name="rakidoro jk" data-member="jk">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Photocard</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">RAKIDORO JK</h3>
+                <div class="product-variant">
+                  <span>Integrante:</span> <strong>JK</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$150 MXN</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="RAKIDORO JK" data-product-price="$150 MXN" data-product-type="Photocard">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col product-item" data-category="figura" data-name="bt21 koya" data-member="namjoon rm">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Figura</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"/>
+                    <path d="M19 12v3a7 7 0 0 1-14 0v-3"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">BT21 KOYA</h3>
+                <div class="product-variant">
+                  <span>Asociado a:</span> <strong>Namjoon</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$99 MXN</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="BT21 KOYA" data-product-price="$99 MXN" data-product-type="Figura">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col product-item" data-category="figura" data-name="bt21 rj" data-member="jin">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Figura</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"/>
+                    <path d="M19 12v3a7 7 0 0 1-14 0v-3"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">BT21 RJ</h3>
+                <div class="product-variant">
+                  <span>Asociado a:</span> <strong>Jin</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$99 MXN</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="BT21 RJ" data-product-price="$99 MXN" data-product-type="Figura">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="col product-item" data-category="figura" data-name="bt21 chimmy" data-member="jimin">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Figura</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"/>
+                    <path d="M19 12v3a7 7 0 0 1-14 0v-3"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">BT21 CHIMMY</h3>
+                <div class="product-variant">
+                  <span>Asociado a:</span> <strong>Jimin</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$99 MXN</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="BT21 CHIMMY" data-product-price="$99 MXN" data-product-type="Figura">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="col product-item" data-category="photocard" data-name="arirang polaroid vinylo1" data-member="namjoon jin">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Photocard</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">ARIRANG POLAROID VINYLO1</h3>
+                <div class="product-variant">
+                  <span>Variantes:</span> <strong>Namjoon / Jin</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$100 MXN c/u</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="ARIRANG POLAROID VINYLO1" data-product-price="$100 MXN c/u" data-product-type="Photocard">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="col product-item" data-category="polaroid" data-name="gigi polaroid 1" data-member="yoongi suga">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Polaroid</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <path d="m9 16 3-3 3 3"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">Gigi Polaroid 1</h3>
+                <div class="product-variant">
+                  <span>Integrante:</span> <strong>Yoongi</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$120 MXN</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="Gigi Polaroid 1" data-product-price="$120 MXN" data-product-type="Polaroid">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 7 -->
+          <div class="col product-item" data-category="photocard" data-name="gigi camisa negra 5" data-member="yoongi suga">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Photocard</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">Gigi camisa negra 5</h3>
+                <div class="product-variant">
+                  <span>Integrante:</span> <strong>Yoongi</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$175 MXN</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="Gigi camisa negra 5" data-product-price="$175 MXN" data-product-type="Photocard">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 8 -->
+          <div class="col product-item" data-category="polaroid" data-name="vinyl polaroid 02" data-member="namjoon jimin">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Polaroid</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <path d="m9 16 3-3 3 3"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">Vinyl Polaroid 02</h3>
+                <div class="product-variant">
+                  <span>Variantes:</span> <strong>Namjoon / Jimin</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$185 MXN c/u</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="Vinyl Polaroid 02" data-product-price="$185 MXN c/u" data-product-type="Polaroid">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 9 -->
+          <div class="col product-item" data-category="photocard" data-name="fake love" data-member="namjoon jin jimin">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Photocard</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">Fake Love</h3>
+                <div class="product-variant">
+                  <span>Variantes:</span> <strong>Namjoon / Jin / Jimin</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$35 MXN c/u</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="Fake Love" data-product-price="$35 MXN c/u" data-product-type="Photocard">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 10 -->
+          <div class="col product-item" data-category="photocard" data-name="bts seagri 2022" data-member="namjoon rm">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Photocard</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">BTS SEAGRI 2022</h3>
+                <div class="product-variant">
+                  <span>Integrante:</span> <strong>Namjoon</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price">$50 MXN</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="BTS SEAGRI 2022" data-product-price="$50 MXN" data-product-type="Photocard">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 11 (Sin precio confirmado) -->
+          <div class="col product-item" data-category="otros" data-name="happy holder verde jin" data-member="jin">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Otros</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">HAPPY HOLDER verde</h3>
+                <div class="product-variant">
+                  <span>Integrante:</span> <strong>Jin</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price-pending">Precio por confirmar</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="HAPPY HOLDER verde — Jin" data-product-price="Precio por confirmar" data-product-type="Otros">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 12 (Sin precio confirmado) -->
+          <div class="col product-item" data-category="otros" data-name="happy azul jin" data-member="jin">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Otros</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">happy azul</h3>
+                <div class="product-variant">
+                  <span>Integrante:</span> <strong>Jin</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price-pending">Precio por confirmar</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="happy azul — Jin" data-product-price="Precio por confirmar" data-product-type="Otros">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 13 (Sin precio confirmado) -->
+          <div class="col product-item" data-category="otros" data-name="happy rojo jin" data-member="jin">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Otros</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">happy rojo</h3>
+                <div class="product-variant">
+                  <span>Integrante:</span> <strong>Jin</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price-pending">Precio por confirmar</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="happy rojo — Jin" data-product-price="Precio por confirmar" data-product-type="Otros">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 14 (Sin precio confirmado) -->
+          <div class="col product-item" data-category="otros" data-name="this&that skz stray kids" data-member="skz stray kids">
+            <div class="product-card">
+              <div class="product-card-visual">
+                <span class="product-category-badge">Otros</span>
+                <div class="product-card-visual-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                  </svg>
+                </div>
+                <span class="product-photo-notice">Fotografía en confirmación</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-name">This&amp;That SKZ</h3>
+                <div class="product-variant">
+                  <span>Grupo:</span> <strong>Stray Kids (SKZ)</strong>
+                </div>
+                <div class="product-meta-row">
+                  <span class="product-price-pending">Precio por confirmar</span>
+                  <span class="product-status-badge">Disponible</span>
+                </div>
+                <button type="button" class="btn-pcsaurios-primary w-100 btn-request-product" data-product-name="This&amp;That SKZ" data-product-price="Precio por confirmar" data-product-type="Otros">
+                  Solicitar producto
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Mensaje de Búsqueda sin coincidencias -->
+        <div id="noProductsAlert" class="text-center py-5" style="display: none;">
+          <div class="p-4 bg-light rounded-3 d-inline-block border">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-muted mb-2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <h4 class="h5 fw-bold mb-1">No se encontraron artículos</h4>
+            <p class="text-muted mb-3">No hay productos que coincidan con los criterios de búsqueda o categoría.</p>
+            <button type="button" class="btn btn-sm btn-pcsaurios-primary" id="clearSearchAlertBtn">
+              Ver todos los productos
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Sección Galería -->
+    <section id="galeria" class="section-padding-alt" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-tag">Galería</span>
+          <h2 id="galeria-title" class="section-title">Galería de Colecciones y Pedidos</h2>
+          <p class="section-subtitle">
+            Fotografías auténticas de productos entregados, empaquetado seguro y colecciones reales de PcSaurios.
+          </p>
+        </div>
+
+        <!-- Filtros de Galería -->
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-4" role="group" aria-label="Filtrar galería">
+          <button type="button" class="btn-filter-pill active" data-gallery-filter="all">Todas</button>
+          <button type="button" class="btn-filter-pill" data-gallery-filter="productos">Productos</button>
+          <button type="button" class="btn-filter-pill" data-gallery-filter="pedidos">Pedidos</button>
+          <button type="button" class="btn-filter-pill" data-gallery-filter="empaquetado">Empaquetado</button>
+        </div>
+
+        <!-- Cuadrícula con las 12 fotos reales -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3" id="galleryGrid">
+
+          <div class="col gallery-item" data-gallery-cat="productos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-01.webp" data-img-alt="Colección de photocards y sleeves de protección en PcSaurios" data-img-title="Photocards protegidas">
+              <img src="img/galeria/galeria-01.webp" alt="Colección de photocards y sleeves de protección en PcSaurios" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Productos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="empaquetado">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-02.webp" data-img-alt="Detalle de empaquetado seguro para envío de coleccionables" data-img-title="Preparación de empaque">
+              <img src="img/galeria/galeria-02.webp" alt="Detalle de empaquetado seguro para envío de coleccionables" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Empaquetado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="pedidos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-03.webp" data-img-alt="Pedido de coleccionables preparado para entrega" data-img-title="Pedido listo para entrega">
+              <img src="img/galeria/galeria-03.webp" alt="Pedido de coleccionables preparado para entrega" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Pedidos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="productos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-04.webp" data-img-alt="Photocards coleccionables y accesorios temáticos" data-img-title="Artículos de colección">
+              <img src="img/galeria/galeria-04.webp" alt="Photocards coleccionables y accesorios temáticos" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Productos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="empaquetado">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-05.webp" data-img-alt="Materiales de protección para paquetes de envío" data-img-title="Cuidado de envíos">
+              <img src="img/galeria/galeria-05.webp" alt="Materiales de protección para paquetes de envío" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Empaquetado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="pedidos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-06.webp" data-img-alt="Lote de pedidos empaquetados con dedicatoria" data-img-title="Entregas personalizadas">
+              <img src="img/galeria/galeria-06.webp" alt="Lote de pedidos empaquetados con dedicatoria" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Pedidos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="productos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-07.webp" data-img-alt="Colección de postales y fotografías de idols" data-img-title="Postales y fotografías">
+              <img src="img/galeria/galeria-07.webp" alt="Colección de postales y fotografías de idols" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Productos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="pedidos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-08.webp" data-img-alt="Conjunto de entregas recibidas de importación" data-img-title="Llegada de pedidos">
+              <img src="img/galeria/galeria-08.webp" alt="Conjunto de entregas recibidas de importación" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Pedidos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="empaquetado">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-09.webp" data-img-alt="Protección con toploader y sleeve para photocard" data-img-title="Toploaders y sleeves">
+              <img src="img/galeria/galeria-09.webp" alt="Protección con toploader y sleeve para photocard" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Empaquetado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="productos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-10.webp" data-img-alt="Figuras y accesorios coleccionables oficiales" data-img-title="Figuras de colección">
+              <img src="img/galeria/galeria-10.webp" alt="Figuras y accesorios coleccionables oficiales" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Productos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="pedidos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-11.webp" data-img-alt="Revisión de artículos previos al envío al cliente" data-img-title="Control de entregas">
+              <img src="img/galeria/galeria-11.webp" alt="Revisión de artículos previos al envío al cliente" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Pedidos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="empaquetado">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-12.webp" data-img-alt="Paquetes listos con etiqueta de mensajería" data-img-title="Despacho de pedidos">
+              <img src="img/galeria/galeria-12.webp" alt="Paquetes listos con etiqueta de mensajería" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Empaquetado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="productos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-13.png" data-img-alt="Colección de planillas de photocards y fotografías de idols" data-img-title="Planillas de photocards">
+              <img src="img/galeria/galeria-13.png" alt="Colección de planillas de photocards y fotografías de idols" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Productos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="empaquetado">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-14.webp" data-img-alt="Caja con empaque de burbuja para protección de envíos" data-img-title="Empaque seguro en caja">
+              <img src="img/galeria/galeria-14.webp" alt="Caja con empaque de burbuja para protección de envíos" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Empaquetado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="empaquetado">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-15.webp" data-img-alt="Pedido protegido con cartón rígido y llavero de colección" data-img-title="Protección de photocard y accesorios">
+              <img src="img/galeria/galeria-15.webp" alt="Pedido protegido con cartón rígido y llavero de colección" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Empaquetado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="pedidos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-16.webp" data-img-alt="Sobre de envío internacional desde Japón con guía de paquetería" data-img-title="Sobre de importación desde Japón">
+              <img src="img/galeria/galeria-16.webp" alt="Sobre de envío internacional desde Japón con guía de paquetería" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Pedidos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col gallery-item" data-gallery-cat="productos">
+            <div class="gallery-grid-item" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryLightboxModal" data-img-src="img/galeria/galeria-17.webp" data-img-alt="Desempaque de figura coleccionable con piezas protegidas" data-img-title="Desempaque de figura coleccionable">
+              <img src="img/galeria/galeria-17.webp" alt="Desempaque de figura coleccionable con piezas protegidas" loading="lazy">
+              <div class="gallery-item-overlay">
+                <span class="gallery-badge">Productos</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+          <p class="small text-muted mb-0">
+            <em>* Nota: Las fotografías corresponden a artículos y entregas de la comunidad PcSaurios con propósitos ilustrativos. Para consultar disponibilidad de compra, revisa la sección Productos.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Sección Promociones -->
+    <section id="promociones" class="section-padding" aria-labelledby="promociones-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-tag">Promociones</span>
+          <h2 id="promociones-title" class="section-title">Beneficios y Novedades</h2>
+          <p class="section-subtitle">
+            Información sobre dinámicas, eventos y novedades de PcSaurios.
+          </p>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 8v4l3 3"/>
+              <circle cx="12" cy="12" r="9"/>
+            </svg>
+          </div>
+          <h3 class="promo-title">Próximas promociones en preparación</h3>
+          <p class="promo-text">
+            Por el momento no contamos con promociones comerciales activas en la página web. Cuando tengamos dinámicas especiales, paquetes con descuento o temporadas de preventa exclusiva, las publicaremos en este espacio y en los canales oficiales de PcSaurios.
+          </p>
+
+          <div class="promo-tips-box">
+            <h4 class="h6 fw-bold mb-2" style="color: var(--pcs-primary);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-1 align-text-top" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+              Buenas prácticas para tus solicitudes:
+            </h4>
+            <ul class="mb-0 ps-3 small text-muted">
+              <li class="mb-1">Confirma siempre la disponibilidad y el precio del producto antes de realizar cualquier movimiento.</li>
+              <li class="mb-1">Ten en cuenta que los artículos de importación requieren cubrir costos de EMS de acuerdo con los plazos establecidos.</li>
+              <li>Revisa atentamente el periodo de resguardo de 30 días para evitar recargos o cancelaciones.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Sección EMS / Aduana -->
+    <section id="ems-aduana" class="section-padding-alt" aria-labelledby="ems-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-tag">Logística Internacional</span>
+          <h2 id="ems-title" class="section-title">EMS / ADUANA</h2>
+          <p class="section-subtitle">
+            Información sobre envíos internacionales y cargos adicionales.
+          </p>
+        </div>
+
+        <!-- Consideraciones y Políticas Clave -->
+        <div class="row g-4 mb-5">
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded-3 border h-100 shadow-sm">
+              <h3 class="h5 fw-bold mb-3" style="color: var(--pcs-primary);">
+                Condiciones de envío internacional
+              </h3>
+              <div class="ems-rule-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="ems-rule-icon" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Cobros por separado:</strong> EMS, aduana y envío nacional se cobran por separado, salvo que la publicación del producto indique lo contrario.</span>
+              </div>
+              <div class="ems-rule-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="ems-rule-icon" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Aduana no fija:</strong> La aduana no siempre aplica y los costos pueden variar dependiendo de las características del pedido. No existe una tarifa general fija aplicable a todos los casos.</span>
+              </div>
+              <div class="ems-rule-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="ems-rule-icon" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Variación de tiempos:</strong> Los tiempos pueden variar por procesos de bodega, aduana o paquetería internacional y nacional.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded-3 border h-100 shadow-sm">
+              <h3 class="h5 fw-bold mb-3" style="color: var(--pcs-primary);">
+                Seguimiento y Resguardo
+              </h3>
+              <div class="ems-rule-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="ems-rule-icon" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Guía de rastreo:</strong> Cuando se realiza el envío correspondiente se proporciona una guía para que puedas darle seguimiento puntual a tu paquete.</span>
+              </div>
+              <div class="ems-rule-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="ems-rule-icon" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Bodega de Japón:</strong> Para productos provenientes de la bodega de Japón, el EMS debe cubrirse puntualmente dentro del plazo indicado en la notificación.</span>
+              </div>
+              <div class="ems-rule-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="ems-rule-icon" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span><strong>Periodo de resguardo:</strong> El periodo máximo general de resguardo de artículos es de <strong>30 días</strong> de acuerdo con las condiciones de PcSaurios.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proceso visual en 5 fases -->
+        <div class="mb-5">
+          <h3 class="h5 fw-bold text-center mb-4">Proceso del Envío Internacional</h3>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-3">
+            <div class="col">
+              <div class="ems-step-card text-center">
+                <div class="ems-step-number">1</div>
+                <h4 class="h6 fw-bold mb-1">En Japón</h4>
+                <p class="small text-muted mb-0">Recepción y empaque inicial en bodega japonesa.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="ems-step-card text-center">
+                <div class="ems-step-number">2</div>
+                <h4 class="h6 fw-bold mb-1">EMS</h4>
+                <p class="small text-muted mb-0">Envío expreso internacional en ruta hacia México.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="ems-step-card text-center">
+                <div class="ems-step-number">3</div>
+                <h4 class="h6 fw-bold mb-1">En México</h4>
+                <p class="small text-muted mb-0">Arribo y recepción en territorio nacional.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="ems-step-card text-center">
+                <div class="ems-step-number">4</div>
+                <h4 class="h6 fw-bold mb-1">Aduana (si aplica)</h4>
+                <p class="small text-muted mb-0">Inspección arancelaria y cálculo en caso de aplicar.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="ems-step-card text-center">
+                <div class="ems-step-number">5</div>
+                <h4 class="h6 fw-bold mb-1">Entrega</h4>
+                <p class="small text-muted mb-0">Envío final por paquetería nacional con número de guía.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glosario de Estados de Pedido -->
+        <div>
+          <h3 class="h5 fw-bold text-center mb-4">Glosario de Estados Oficiales de Pedidos</h3>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            <div class="col">
+              <div class="ems-status-card">
+                <div class="ems-status-code">EN JPN</div>
+                <p class="ems-status-desc">El producto todavía se encuentra en Japón en proceso de concentración.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="ems-status-card">
+                <div class="ems-status-code">PAGAR EMS / ADUANA</div>
+                <p class="ems-status-desc">Existe un cargo pendiente correspondiente al proceso internacional o aduanal indicado.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="ems-status-card">
+                <div class="ems-status-code">EMS PAGADO / VIENE A MX</div>
+                <p class="ems-status-desc">El envío internacional fue cubierto y el paquete se encuentra en tránsito a México.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="ems-status-card">
+                <div class="ems-status-code">YA EN TERRITORIO MX</div>
+                <p class="ems-status-desc">El pedido ya ingresó a México y está siendo preparado para su despacho nacional.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="ems-status-card">
+                <div class="ems-status-code">EN PROCESO DE ENTREGA</div>
+                <p class="ems-status-desc">El pedido está avanzando hacia su entrega correspondiente mediante paquetería o entrega acordada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Sección Contacto -->
+    <section id="contacto" class="section-padding" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-tag">Contacto</span>
+          <h2 id="contacto-title" class="section-title">Contacto y Solicitudes</h2>
+          <p class="section-subtitle">
+            Conoce cómo solicitar tus artículos coleccionables y resolver dudas sobre nuestro catálogo.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Columna 1: Pasos para solicitar -->
+          <div class="col-lg-6">
+            <div class="contact-card">
+              <h3 class="h5 fw-bold mb-3" style="color: var(--pcs-primary);">
+                ¿Cómo realizar una solicitud de compra?
+              </h3>
+              <p class="text-muted small mb-4">
+                Sigue estos sencillos pasos para iniciar tu solicitud de forma clara y sin confusiones:
+              </p>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <span class="contact-step-badge">1</span>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Elige tu producto en el catálogo</h4>
+                  <p class="small text-muted mb-0">Revisa la sección Productos e identifica el nombre exacto, variante o integrante del artículo deseado.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <span class="contact-step-badge">2</span>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Envíanos tu consulta</h4>
+                  <p class="small text-muted mb-0">Comunícate indicando el nombre del producto. Si tiene la leyenda "Precio por confirmar", te brindaremos la cotización vigente.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <span class="contact-step-badge">3</span>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Confirmación y método de envío</h4>
+                  <p class="small text-muted mb-0">Te informaremos el estatus de disponibilidad, método de entrega o cotización de envío nacional/EMS correspondiente.</p>
+                </div>
+              </div>
+
+              <div class="contact-notice-box">
+                <strong>Aviso de compra:</strong> PcSaurios no procesa pagos directos en este sitio web. Todas las confirmaciones se realizan de manera personalizada.
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna 2: Canales oficiales y formulario Front-End -->
+          <div class="col-lg-6">
+            <div class="contact-card">
+              <h3 class="h5 fw-bold mb-3" style="color: var(--pcs-primary);">
+                Canales oficiales de comunicación
+              </h3>
+              <p class="text-muted small mb-3">
+                Los canales directos de atención (redes sociales y mensajería oficial) se encuentran en proceso de configuración y verificación oficial.
+              </p>
+
+              <div class="p-3 bg-light rounded-3 border mb-4">
+                <div class="d-flex align-items-center gap-2 text-muted small">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                  </svg>
+                  <span>Enlaces directos pendientes de publicación por el equipo de PcSaurios.</span>
+                </div>
+              </div>
+
+              <!-- Formulario de Consulta Front-End Informativo -->
+              <h4 class="h6 fw-bold mb-2">Formulario de consulta de muestra (Front-End)</h4>
+              <form id="contactFormSample" onsubmit="event.preventDefault(); document.getElementById('contactFormSuccess').style.display='block';">
+                <div class="mb-2">
+                  <label for="contactNameInput" class="form-label small text-muted mb-1">Tu nombre:</label>
+                  <input type="text" id="contactNameInput" class="form-control form-control-sm" placeholder="Ej. Alex" required>
+                </div>
+                <div class="mb-2">
+                  <label for="contactProductInput" class="form-label small text-muted mb-1">Producto de interés:</label>
+                  <input type="text" id="contactProductInput" class="form-control form-control-sm" placeholder="Ej. RAKIDORO JK">
+                </div>
+                <div class="mb-3">
+                  <label for="contactMessageInput" class="form-label small text-muted mb-1">Mensaje o duda:</label>
+                  <textarea id="contactMessageInput" rows="2" class="form-control form-control-sm" placeholder="Escribe aquí tu consulta..." required></textarea>
+                </div>
+                <button type="submit" class="btn-pcsaurios-primary btn-sm w-100">
+                  Registrar consulta informativa
+                </button>
+              </form>
+              <div id="contactFormSuccess" class="alert alert-success mt-2 py-2 px-3 small" style="display: none;" role="alert">
+                Consulta registrada localmente de forma ilustrativa. Recuerda comunicarte por los canales oficiales una vez publicados.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Pie de Página (Footer)
+       ========================================================================== -->
+  <footer class="footer-pcsaurios" role="contentinfo">
+    <div class="container">
+      <div class="row g-4 justify-content-between align-items-center">
+        <div class="col-md-5">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="img/identidad/logo-pcsaurios.webp" alt="Logotipo PcSaurios" height="38" class="rounded-circle">
+            <span class="h5 fw-bold text-white mb-0">PcSaurios</span>
+          </div>
+          <p class="footer-bottom-text mb-0">
+            Página comercial y catálogo de photocards, sleeves, postales y artículos de colección. Información centralizada y transparente para coleccionistas.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <nav aria-label="Enlaces rápidos del pie de página">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item me-3"><a href="#inicio">Inicio</a></li>
+              <li class="list-inline-item me-3"><a href="#nosotros">Nosotros</a></li>
+              <li class="list-inline-item me-3"><a href="#productos">Productos</a></li>
+              <li class="list-inline-item me-3"><a href="#galeria">Galería</a></li>
+              <li class="list-inline-item me-3"><a href="#promociones">Promociones</a></li>
+              <li class="list-inline-item me-3"><a href="#ems-aduana">EMS / Aduana</a></li>
+              <li class="list-inline-item"><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="row align-items-center">
+        <div class="col-sm-6 text-center text-sm-start">
+          <p class="footer-bottom-text mb-0">
+            &copy; 2026 PcSaurios. Todos los derechos reservados.
+          </p>
+        </div>
+        <div class="col-sm-6 text-center text-sm-end mt-2 mt-sm-0">
+          <span class="footer-bottom-text">
+            Front-End comercial • Diseñado con HTML5, CSS3, Bootstrap 5.3 y JS
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Modales Accesibles
+       ========================================================================== -->
+
+  <!-- Modal 1: Solicitud de Producto Informativa -->
+  <div class="modal fade" id="productRequestModal" tabindex="-1" aria-labelledby="productRequestModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header modal-header-pcsaurios">
+          <h5 class="modal-title h6 fw-bold mb-0" id="productRequestModalLabel">Solicitud de Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="mb-3 p-3 bg-light rounded-3 border">
+            <span class="badge bg-secondary mb-1" id="modalProductType">Photocard</span>
+            <h4 class="h5 fw-bold mb-1" id="modalProductName">Nombre del producto</h4>
+            <div class="text-primary fw-bold" id="modalProductPrice" style="color: var(--pcs-primary) !important;">$0.00 MXN</div>
+          </div>
+          <p class="small text-muted mb-3">
+            Para continuar con la solicitud de este artículo o consultar cualquier duda sobre disponibilidad y entregas:
+          </p>
+          <ol class="small text-muted ps-3 mb-4">
+            <li class="mb-1">Copia el nombre del artículo: <strong id="modalProductCopyName" class="text-dark">Nombre</strong>.</li>
+            <li class="mb-1">Dirígete a nuestra sección de <a href="#contacto" data-bs-dismiss="modal" class="fw-bold" style="color: var(--pcs-primary);">Contacto</a> para coordinar los detalles.</li>
+            <li>Te confirmaremos disponibilidad y cotización de envío nacional o EMS.</li>
+          </ol>
+          <div class="d-flex gap-2">
+            <a href="#contacto" data-bs-dismiss="modal" class="btn-pcsaurios-primary w-100">
+              Ir a Contacto
+            </a>
+            <button type="button" class="btn btn-outline-secondary w-50" data-bs-dismiss="modal">
+              Volver al catálogo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Visor de Imagen de Galería (Lightbox) -->
+  <div class="modal fade" id="galleryLightboxModal" tabindex="-1" aria-labelledby="galleryLightboxModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white border-0">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title h6 text-white mb-0" id="galleryLightboxModalLabel">Fotografía de Galería</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center p-3">
+          <img id="lightboxImage" src="" alt="Fotografía ampliada de PcSaurios" class="img-fluid rounded" style="max-height: 70vh; object-fit: contain;">
+          <p class="small text-light mt-2 mb-0" id="lightboxCaption">Descripción de la fotografía</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 Bundle JS (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lógica Front-End personalizada -->
+  <script src="js/main.js"></script>
+</body>
+</html>
