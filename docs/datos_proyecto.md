@@ -73,6 +73,6 @@ Anteriormente, la información comercial se distribuía a través de publicacion
 
 ## 6. Información propuesta y pendiente
 
-* **Asociación de fotografías a productos específicos:** Dado que las imágenes en `img/productos/` tienen nombres neutrales, no se fuerzan asociaciones ficticias con los productos del catálogo. Se presentan soluciones visuales neutrales de categoría mientras el equipo valida el mapeo exacto.
+* **Asociación de fotografías a productos específicos:** Confirmadas por nombre `RAKIDORO JK.webp` → `RAKIDORO JK`, `GIGI POLAROID1.jpeg` → `Gigi Polaroid 1`, `GIGI CAMISA NEGRA 5.jpeg` → `Gigi camisa negra 5` y `VINYL POLAROID ARIRANG VINYL 01.jpeg` → `ARIRANG POLAROID VINYLO1`. Los demás archivos neutrales siguen sin vincularse y sus tarjetas conservan “Fotografía en confirmación”.
 * **Canales oficiales de contacto:** Se deja preparada la estructura visual de contacto sin inventar números de teléfono, correos o cuentas falsas en redes sociales.
 * **Promociones:** No existen promociones confirmadas actualmente; la sección se presenta de forma informativa y neutral.

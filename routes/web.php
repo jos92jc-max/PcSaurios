@@ -10,6 +10,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
+Route::get('/portada', function () {
+    $publicPath = public_path('index.html');
+    $path = is_file($publicPath) ? $publicPath : base_path('index.html');
+
+    abort_unless(is_file($path), 404);
+
+    $contenido = file_get_contents($path);
+    abort_unless($contenido !== false, 500);
+
+    return response($contenido, 200)->header('Content-Type', 'text/html; charset=UTF-8');
+})->name('portada');
+
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.store');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
