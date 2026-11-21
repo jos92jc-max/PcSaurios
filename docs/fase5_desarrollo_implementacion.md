@@ -1,6 +1,6 @@
 # Fase 5 — Desarrollo e implementación
 
-**Estado:** Completada y verificada (Front-End comercial funcional).
+**Estado:** Completada y verificada (portada estática y panel Laravel administrativo).
 
 Este documento registra de manera formal, transparente y comprobable el desarrollo técnico, la estructura de código, los recursos reales utilizados, las decisiones del cliente integradas y los resultados de las pruebas realizadas en la plataforma web de **PcSaurios**.
 
@@ -179,10 +179,9 @@ Se realizaron las siguientes validaciones técnicas:
 
 ---
 
-## 8. Funcionalidades pendientes o futuras (Fase posterior)
+## 8. Funcionalidades implementadas en fase posterior
 
-* Conexión con un Back-End (PHP / Node.js) y base de datos relacional (MySQL).
-* Carrito de compras persistente con cálculo automático de envíos.
-* Integración de pasarela de pago segura (Stripe / PayPal / Mercado Pago).
-* Panel administrativo para alta, baja y modificación de productos en tiempo real.
-* Sistema de autenticación de clientes y seguimiento dinámico de guías de rastreo.
+* Panel Laravel con autenticación propia, roles y protección de rutas.
+* CRUD de productos, categorías y pedidos conectado a MySQL/XAMPP.
+* Edición de datos generales restringida al rol Administrador.
+* Pendiente para futuras entregas: pasarela de pago, cálculo automático de envíos y seguimiento de guías.
